@@ -53,7 +53,7 @@ Caso deseje utilizar o botão estilizado em um projeto web, adicione o código a
 </style>
 <div class="responsive-container">
   <a href="https://carlitoslocacoes.com/site6/site2/" target="_blank" class="stylized-button">ID no Barbante</a>
-</div>'''
+</div>```
 
 Python: Botão Interativo com Tkinter
 Aqui está o código completo para criar um botão interativo com Tkinter que abre um link ao clicar e pode ser movido pela tela:
@@ -113,7 +113,7 @@ button.bind('<ButtonRelease-2>', stop_move)  # Soltar o botão do meio
 
 # Loop principal da aplicação
 root.mainloop()
-'''
+```
 
 Como Executar
 Instale o Python:
