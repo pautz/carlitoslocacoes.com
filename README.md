@@ -28,7 +28,6 @@ Clique no link abaixo para visualizar a apresentação:
 
 [Visualizar a apresentação](https://carlitoslocacoes.com/site2/Presentation.pdf)
 
-Ou copie e cole este link no navegador: https://carlitoslocacoes.com/site2/Presentation.pdf
         
         <a class="button" href="https://www.carlitoslocacoes.com">Saiba Mais</a>
     </div>
