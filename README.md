@@ -5,14 +5,11 @@
 
 Este repositório apresenta o **ID no Barbante**, uma solução que utiliza um botão interativo para facilitar a localização de bebês, trazendo maior segurança e tranquilidade para os pais.
 
-   <h3>O que é o ID no Barbante?</h3>
-         <p>O ID no Barbante é um recurso que permite rastrear a localização de bebês através de um identificador seguro e discreto, preso à chupeta ou à roupa do bebê. Essa funcionalidade foi desenvolvida para garantir a tranquilidade dos pais e responsáveis, proporcionando maior segurança em eventos, ambientes com grande circulação de pessoas, ou até mesmo viagens internacionais.</p>
-         
-         <h3>Como Funciona?</h3>
-         <p>O identificador é equipado com um número no barbante que se comunica com nosso sistema de rastreamento. Em caso de perda, os pais podem acessar o sistema através do nosso site e localizar o bebê rapidamente.</p>
-
-
 ### O que é o ID no Barbante?
+O ID no Barbante é um recurso que permite rastrear a localização de bebês através de um identificador seguro e discreto, preso à chupeta ou à roupa do bebê. Essa funcionalidade foi desenvolvida para garantir a tranquilidade dos pais e responsáveis, proporcionando maior segurança em eventos, ambientes com grande circulação de pessoas, ou até mesmo viagens internacionais.</p>
+         
+   ## Como Funciona?
+         O identificador é equipado com um número no barbante que se comunica com nosso sistema de rastreamento. Em caso de perda, os pais podem acessar o sistema através do nosso site e localizar o bebê rapidamente.
 
 O ID no Barbante é uma tecnologia inovadora que rastreia bebês de forma segura e discreta, através de identificadores conectados à roupa ou chupeta do bebê.
 
