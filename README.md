@@ -14,7 +14,7 @@ O ID no Barbante é um recurso que permite rastrear a localização de bebês at
 - Tranquilidade para os pais
 - Fácil de usar e discreto
 
-### Código do Botão Estilizado
+### Código ID Barbante Botão Estilizado em seu projeto.
 
 ```html
 <style>
