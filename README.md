@@ -10,9 +10,9 @@ O ID no Barbante é uma tecnologia inovadora que rastreia bebês de forma segura
 
 ### Benefícios
 
-- **Maior segurança**: Ideal para locais movimentados.
-- **Tranquilidade para os pais**: Monitoramento fácil.
-- **Discreto e prático**: Não incomoda o bebê.
+<li>Maior segurança em eventos e locais movimentados</li>
+             <li>Tranquilidade para os pais e responsáveis</li>
+             <li>Fácil de usar e discreto</li>
 
 ---
 
