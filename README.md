@@ -202,17 +202,18 @@ Caso deseje utilizar o botão estilizado em um projeto web, adicione o código a
 <div class="responsive-container">
   <a href="https://carlitoslocacoes.com/site6/site2/" target="_blank" class="stylized-button">ID no Barbante</a>
 </div>
+```
 
 ## Nova Funcionalidade: Executável para Windows
 Apresentamos o executável idnobarbante.exe, disponível para download, que oferece uma interface gráfica intuitiva e prática para navegar pelas funcionalidades do Carlito's Locações.
 https://github.com/pautz/carlitoslocacoes.com/tree/main/ID%20no%20Barbante
 
-Tecnologias Utilizadas
+## Tecnologias Utilizadas
 C#: Para o desenvolvimento do executável.
 
 Windows Forms: Para a criação da interface gráfica.
 
 WebBrowser: Controle integrado de navegação.
 
-Licença
+## Licença
 Este projeto está sob a licença MIT License.
