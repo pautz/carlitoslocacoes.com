@@ -53,3 +53,77 @@ O ID no Barbante é um recurso que permite rastrear a localização de bebês at
 <div class="responsive-container">
     <a href="https://carlitoslocacoes.com/site6/site2/" target="_blank" class="stylized-button">ID no Barbante</a>
 </div>
+
+# ID no Barbante
+
+Um aplicativo Python que permite criar um botão interativo, móvel e funcional utilizando **Tkinter**.
+
+## Instalação do Python
+
+Para rodar este projeto, siga os passos abaixo para instalar o Python pela Microsoft Store:
+
+1. **Acesse a Microsoft Store**:
+   - Procure pela Microsoft Store no menu Iniciar do Windows e abra o aplicativo.
+
+2. **Busque por Python**:
+   - Use a barra de busca e digite "Python".
+
+3. **Escolha uma versão**:
+   - Instale a versão mais recente do Python (recomendado: Python 3.10 ou superior).
+
+4. **Instale o Python**:
+   - Clique em "Obter" ou "Instalar" para iniciar o processo.
+
+5. **Configuração após a instalação**:
+   - Confirme a instalação no Prompt de Comando (CMD) usando `python --version`.
+   - Instale bibliotecas adicionais, caso necessário, com `pip install biblioteca`.
+
+## Execução do Código
+
+1. **Salve o código**:
+   - Copie o código abaixo e salve-o em um arquivo chamado `idnobarbante.py`.
+
+```python
+import tkinter as tk
+import webbrowser
+
+def button_action():
+    url = "https://carlitoslocacoes.com/site6/site2"
+    webbrowser.open(url)
+
+def start_move(event):
+    global moving
+    moving = True
+    global offset_x, offset_y
+    offset_x = event.x
+    offset_y = event.y
+
+def move_button(event):
+    if moving:
+        new_x = event.x_root - offset_x
+        new_y = event.y_root - offset_y
+        button.place(x=new_x, y=new_y)
+
+def stop_move(event):
+    global moving
+    moving = False
+
+root = tk.Tk()
+root.title("Overlay")
+root.geometry(f"{root.winfo_screenwidth()}x{root.winfo_screenheight()}")
+root.attributes('-topmost', True)
+root.overrideredirect(True)
+root.configure(bg='white')
+root.attributes('-transparentcolor', 'white')
+
+moving = False
+
+button = tk.Label(root, text="ID no Barbante", font=("Arial", 12), fg="blue", bg="lightgray", bd=1, relief="solid")
+button.place(x=100, y=100)
+
+button.bind('<Button-2>', start_move)
+button.bind('<B2-Motion>', move_button)
+button.bind('<ButtonRelease-2>', stop_move)
+
+root.mainloop()
+
