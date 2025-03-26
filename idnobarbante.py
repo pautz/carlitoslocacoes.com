@@ -42,6 +42,9 @@ moving = False
 button = tk.Label(root, text="ID no Barbante", font=("Arial", 12), fg="blue", bg="lightgray", bd=1, relief="solid")
 button.place(x=100, y=100)  # Posição inicial do botão
 
+# Vincular o clique esquerdo ao botão para abrir o link
+button.bind('<Button-1>', lambda event: button_action())
+
 # Bind dos eventos do mouse para movimentação
 button.bind('<Button-2>', start_move)    # Clique com o botão do meio do mouse sobre o botão
 button.bind('<B2-Motion>', move_button)  # Movimento enquanto o botão do meio é pressionado
