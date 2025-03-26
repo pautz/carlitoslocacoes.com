@@ -1,21 +1,26 @@
-Carlito's Locações
-Nova Funcionalidade: ID no Barbante para Localização de Bebês
-Este repositório apresenta o ID no Barbante, uma solução que utiliza um botão interativo para facilitar a localização de bebês, trazendo maior segurança e tranquilidade para os pais.
+# Carlito's Locações
 
-O que é o ID no Barbante?
+## Nova Funcionalidade: ID no Barbante para Localização de Bebês
+
+Este repositório apresenta o **ID no Barbante**, uma solução que utiliza um botão interativo para facilitar a localização de bebês, trazendo maior segurança e tranquilidade para os pais.
+
+### O que é o ID no Barbante?
+
 O ID no Barbante é uma tecnologia inovadora que rastreia bebês de forma segura e discreta, através de identificadores conectados à roupa ou chupeta do bebê.
 
-Benefícios
-Maior segurança: Ideal para locais movimentados.
+### Benefícios
 
-Tranquilidade para os pais: Monitoramento fácil.
+- **Maior segurança**: Ideal para locais movimentados.
+- **Tranquilidade para os pais**: Monitoramento fácil.
+- **Discreto e prático**: Não incomoda o bebê.
 
-Discreto e prático: Não incomoda o bebê.
+---
 
-HTML: Botão Estilizado para Web
+## HTML: Botão Estilizado para Web
+
 Caso deseje utilizar o botão estilizado em um projeto web, adicione o código abaixo no HTML:
 
-html
+```html
 <style>
 .stylized-button {
   font-size: 16px;
@@ -51,8 +56,7 @@ html
 </div>
 Python: Botão Interativo com Tkinter
 Aqui está o código completo para criar um botão interativo com Tkinter que abre um link ao clicar e pode ser movido pela tela:
-
-python
+```python
 import tkinter as tk
 import webbrowser
 
@@ -107,6 +111,7 @@ button.bind('<ButtonRelease-2>', stop_move)  # Soltar o botão do meio
 
 # Loop principal da aplicação
 root.mainloop()
+
 Como Executar
 Instale o Python:
 
