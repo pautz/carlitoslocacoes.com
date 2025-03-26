@@ -16,43 +16,13 @@ O ID no Barbante é um recurso que permite rastrear a localização de bebês at
 
 ### Código ID Barbante Botão Estilizado em seu projeto.
 
-```html
-<style>
-.stylized-button {
-    font-size: 16px;
-    color: #fff;
-    background-color: #008CBA; /* Ajuste para a cor desejada */
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
+Para implementar o botão estilizado no HTML, use este estilo e botão:
 
-.stylized-button:hover {
-    background-color: #005f73; /* Cor ao passar o mouse */
-}
-.responsive-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-}
-.stylized-button {
-  position: fixed;
-  bottom: 0; /* Fixado na parte inferior da página */
-  left: 50%; /* Centralizado horizontalmente */
-  transform: translateX(-50%); /* Ajusta para alinhar ao centro */
-  z-index: 1000; /* Mantém o botão acima de outros elementos */
-}
+`<style>.stylized-button { font-size: 16px; color: #fff; background-color: #008CBA; border: none; padding: 10px 20px; text-align: center; cursor: pointer; border-radius: 5px; transition: background-color 0.3s; } .stylized-button:hover { background-color: #005f73; } .responsive-container { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: center; } .stylized-button { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); z-index: 1000; }</style>`
 
+`<div class="responsive-container"> <a href="https://carlitoslocacoes.com/site6/site2/" target="_blank" class="stylized-button">ID no Barbante</a> </div>`
 
-</style>
-<div class="responsive-container">
-    <a href="https://carlitoslocacoes.com/site6/site2/" target="_blank" class="stylized-button">ID no Barbante</a>
-</div>
+---
 
 # ID no Barbante
 
@@ -81,49 +51,37 @@ Para rodar este projeto, siga os passos abaixo para instalar o Python pela Micro
 ## Execução do Código
 
 1. **Salve o código**:
-   - Copie o código abaixo e salve-o em um arquivo chamado `idnobarbante.py`.
+   - Salve o seguinte script como `idnobarbante.py`:
 
-```python
-import tkinter as tk
-import webbrowser
+`import tkinter as tk`
+`import webbrowser`
+`def button_action(): url = "https://carlitoslocacoes.com/site6/site2" webbrowser.open(url)`
+`def start_move(event): global moving moving = True global offset_x, offset_y offset_x = event.x offset_y = event.y`
+`def move_button(event): if moving: new_x = event.x_root - offset_x new_y = event.y_root - offset_y button.place(x=new_x, y=new_y)`
+`def stop_move(event): global moving moving = False`
+`root = tk.Tk() root.title("Overlay") root.geometry(f"{root.winfo_screenwidth()}x{root.winfo_screenheight()}") root.attributes('-topmost', True) root.overrideredirect(True) root.configure(bg='white') root.attributes('-transparentcolor', 'white')`
+`moving = False`
+`button = tk.Label(root, text="ID no Barbante", font=("Arial", 12), fg="blue", bg="lightgray", bd=1, relief="solid") button.place(x=100, y=100)`
+`button.bind('<Button-2>', start_move) button.bind('<B2-Motion>', move_button) button.bind('<ButtonRelease-2>', stop_move)`
+`root.mainloop()`
 
-def button_action():
-    url = "https://carlitoslocacoes.com/site6/site2"
-    webbrowser.open(url)
+2. **Abra o Prompt de Comando (CMD)**:
+   - No Windows, pressione `Win + R`, digite `cmd` e pressione Enter.
 
-def start_move(event):
-    global moving
-    moving = True
-    global offset_x, offset_y
-    offset_x = event.x
-    offset_y = event.y
+3. **Navegue até a pasta do projeto**:
+   - Use o comando `cd` para acessar a pasta onde está salvo `idnobarbante.py`.
 
-def move_button(event):
-    if moving:
-        new_x = event.x_root - offset_x
-        new_y = event.y_root - offset_y
-        button.place(x=new_x, y=new_y)
+4. **Execute o script**:
+   - No CMD, rode o comando: `python idnobarbante.py`.
 
-def stop_move(event):
-    global moving
-    moving = False
+## Funcionalidades
 
-root = tk.Tk()
-root.title("Overlay")
-root.geometry(f"{root.winfo_screenwidth()}x{root.winfo_screenheight()}")
-root.attributes('-topmost', True)
-root.overrideredirect(True)
-root.configure(bg='white')
-root.attributes('-transparentcolor', 'white')
+- O botão abre o link para o site definido ao clicar.
+- Movimente o botão clicando e arrastando com a **roda do mouse**:
+  - **Pressione a roda do mouse** sobre o botão para começar a mover.
+  - **Arraste o botão** enquanto mantém a roda pressionada.
+  - **Solte a roda do mouse** para parar o movimento.
 
-moving = False
+## Licença
 
-button = tk.Label(root, text="ID no Barbante", font=("Arial", 12), fg="blue", bg="lightgray", bd=1, relief="solid")
-button.place(x=100, y=100)
-
-button.bind('<Button-2>', start_move)
-button.bind('<B2-Motion>', move_button)
-button.bind('<ButtonRelease-2>', stop_move)
-
-root.mainloop()
-
+Este projeto está sob a [MIT License](https://opensource.org/licenses/MIT).
