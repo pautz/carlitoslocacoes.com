@@ -20,9 +20,14 @@ criar dbmysqli com o .sql
             <li>Maior segurança em eventos e locais movimentados</li>
             <li>Tranquilidade para os pais e responsáveis</li>
             <li>Fácil de usar e discreto</li>
-            <iframe src="https://carlitoslocacoes.com/site2/Presentation.pdf" width="100%" height="600">
-        Este navegador não suporta iframes. <a href="https://carlitoslocacoes.com/site2/Presentation.pdf">Clique aqui para acessar o PDF</a>.
-    </iframe>
+            # Apresentação
+
+Clique no link abaixo para visualizar a apresentação:
+
+[Visualizar a apresentação](https://carlitoslocacoes.com/site2/Presentation.pdf)
+
+Ou copie e cole este link no navegador: https://carlitoslocacoes.com/site2/Presentation.pdf
+
         </ul>
         <p>Experimente agora mesmo essa novidade e garanta a segurança dos seus pequenos. Acesse sua conta no Carlito's Locações e adicione o ID no Barbante às suas locações.</p>
         <a class="button" href="https://www.carlitoslocacoes.com">Saiba Mais</a>
