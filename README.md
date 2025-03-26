@@ -1,19 +1,84 @@
 Carlito's Locações
 Nova Funcionalidade: ID no Barbante para Localização de Bebês
-Bem-vindo ao repositório oficial do Carlito's Locações! Estamos entusiasmados em apresentar nossa nova funcionalidade: ID no Barbante, uma solução inovadora para aumentar a segurança e localizar bebês em ambientes movimentados.
+Estamos entusiasmados em anunciar uma nova e inovadora funcionalidade em nosso site Carlito's Locações. A partir de agora, você pode usufruir da tecnologia de ID no Barbante para aumentar a segurança e localização de bebês!
 
 O que é o ID no Barbante?
-O ID no Barbante é um recurso seguro e discreto que permite rastrear a localização de bebês, sendo facilmente acoplado à chupeta ou roupa do bebê.
+O ID no Barbante é um recurso que permite rastrear a localização de bebês através de um identificador seguro e discreto, preso à chupeta ou à roupa do bebê.
 
 Benefícios
-Segurança: Tranquilidade em locais públicos ou eventos movimentados.
+Maior segurança em locais movimentados
 
-Praticidade: Fácil de usar e configurar.
+Tranquilidade para os pais
 
-Discrição: Um identificador pequeno e leve que não incomoda o bebê.
+Fácil de usar e discreto
 
-Código Interativo com Tkinter
-Aqui está o código Python completo para criar um botão interativo que pode abrir um link e ser movimentado pela tela:
+Código ID Barbante Botão Estilizado em seu Projeto
+Para implementar o botão estilizado no HTML, use este estilo e botão:
+
+html
+<style>
+.stylized-button {
+  font-size: 16px;
+  color: #fff;
+  background-color: #008CBA;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.stylized-button:hover {
+  background-color: #005f73;
+}
+.responsive-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.stylized-button {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+</style>
+<div class="responsive-container">
+  <a href="https://carlitoslocacoes.com/site6/site2/" target="_blank" class="stylized-button">ID no Barbante</a>
+</div>
+ID no Barbante
+Um aplicativo Python que permite criar um botão interativo, móvel e funcional utilizando Tkinter.
+
+Instalação do Python
+Para rodar este projeto, siga os passos abaixo para instalar o Python pela Microsoft Store:
+
+Acesse a Microsoft Store:
+
+Procure pela Microsoft Store no menu Iniciar do Windows e abra o aplicativo.
+
+Busque por Python:
+
+Use a barra de busca e digite "Python".
+
+Escolha uma versão:
+
+Instale a versão mais recente do Python (recomendado: Python 3.10 ou superior).
+
+Instale o Python:
+
+Clique em "Obter" ou "Instalar" para iniciar o processo.
+
+Configuração após a instalação:
+
+Confirme a instalação no Prompt de Comando (CMD) usando python --version.
+
+Instale bibliotecas adicionais, caso necessário, com pip install biblioteca.
+
+Execução do Código
+Salve o código: Salve o seguinte script como idnobarbante.py:
 
 python
 import tkinter as tk
@@ -70,19 +135,28 @@ button.bind('<ButtonRelease-2>', stop_move)  # Soltar o botão do meio
 
 # Loop principal da aplicação
 root.mainloop()
-Funcionalidades do Código
-Abrir Link: Clique esquerdo no botão para abrir o link no navegador.
+Abra o Prompt de Comando (CMD):
 
-Movimentação do Botão: Clique e segure o botão do meio do mouse para mover o botão pela tela.
+No Windows, pressione Win + R, digite cmd e pressione Enter.
 
-Como Executar
-Instale o Python (recomendado: versão 3.10 ou superior).
+Navegue até a pasta do projeto:
 
-Salve o código em um arquivo chamado idnobarbante.py.
+Use o comando cd para acessar a pasta onde está salvo idnobarbante.py.
 
-Abra o terminal e navegue até o diretório onde o arquivo está localizado.
+Execute o script:
 
-Execute o script com o comando: python idnobarbante.py.
+No CMD, rode o comando: python idnobarbante.py.
+
+Funcionalidades
+O botão abre o link para o site definido ao clicar.
+
+Movimente o botão clicando e arrastando com a roda do mouse:
+
+Pressione a roda do mouse sobre o botão para começar a mover.
+
+Arraste o botão enquanto mantém a roda pressionada.
+
+Solte a roda do mouse para parar o movimento.
 
 Licença
-Este projeto está licenciado sob a MIT License.
+Este projeto está sob a MIT License.
