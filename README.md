@@ -1,8 +1,6 @@
 # carlitoslocacoes.com
 
-criar dbmysqli
-
-alterar username,password,dbname nos arquivos.
+criar dbmysqli com o .sql
 
 <!DOCTYPE html>
 <html lang="pt-BR">
