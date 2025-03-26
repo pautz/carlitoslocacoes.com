@@ -215,5 +215,5 @@ Windows Forms: Para a criação da interface gráfica.
 
 WebBrowser: Controle integrado de navegação.
 
-## Licença
+Licença
 Este projeto está sob a licença MIT License.
