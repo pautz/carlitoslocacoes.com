@@ -40,6 +40,13 @@ O ID no Barbante é um recurso que permite rastrear a localização de bebês at
     align-items: center;
     justify-content: center;
 }
+.stylized-button {
+  position: fixed;
+  bottom: 10px; /* Ajuste a posição vertical conforme necessário */
+  right: 10px; /* Ajuste a posição horizontal conforme necessário */
+  z-index: 1000; /* Garante que o botão permaneça acima de outros elementos */
+}
+
 </style>
 <div class="responsive-container">
     <a href="https://carlitoslocacoes.com/site6/site2/" target="_blank" class="stylized-button">ID no Barbante</a>
