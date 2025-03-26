@@ -1,19 +1,19 @@
 Carlito's Locações
 Nova Funcionalidade: ID no Barbante para Localização de Bebês
-Estamos entusiasmados em anunciar uma nova e inovadora funcionalidade em nosso site Carlito's Locações. A partir de agora, você pode usufruir da tecnologia de ID no Barbante para aumentar a segurança e localização de bebês!
+Este repositório apresenta o ID no Barbante, uma solução que utiliza um botão interativo para facilitar a localização de bebês, trazendo maior segurança e tranquilidade para os pais.
 
 O que é o ID no Barbante?
-O ID no Barbante é um recurso que permite rastrear a localização de bebês através de um identificador seguro e discreto, preso à chupeta ou à roupa do bebê.
+O ID no Barbante é uma tecnologia inovadora que rastreia bebês de forma segura e discreta, através de identificadores conectados à roupa ou chupeta do bebê.
 
 Benefícios
-Maior segurança em locais movimentados
+Maior segurança: Ideal para locais movimentados.
 
-Tranquilidade para os pais
+Tranquilidade para os pais: Monitoramento fácil.
 
-Fácil de usar e discreto
+Discreto e prático: Não incomoda o bebê.
 
-Código ID Barbante Botão Estilizado em seu Projeto
-Para implementar o botão estilizado no HTML, use este estilo e botão:
+HTML: Botão Estilizado para Web
+Caso deseje utilizar o botão estilizado em um projeto web, adicione o código abaixo no HTML:
 
 html
 <style>
@@ -49,36 +49,8 @@ html
 <div class="responsive-container">
   <a href="https://carlitoslocacoes.com/site6/site2/" target="_blank" class="stylized-button">ID no Barbante</a>
 </div>
-ID no Barbante
-Um aplicativo Python que permite criar um botão interativo, móvel e funcional utilizando Tkinter.
-
-Instalação do Python
-Para rodar este projeto, siga os passos abaixo para instalar o Python pela Microsoft Store:
-
-Acesse a Microsoft Store:
-
-Procure pela Microsoft Store no menu Iniciar do Windows e abra o aplicativo.
-
-Busque por Python:
-
-Use a barra de busca e digite "Python".
-
-Escolha uma versão:
-
-Instale a versão mais recente do Python (recomendado: Python 3.10 ou superior).
-
-Instale o Python:
-
-Clique em "Obter" ou "Instalar" para iniciar o processo.
-
-Configuração após a instalação:
-
-Confirme a instalação no Prompt de Comando (CMD) usando python --version.
-
-Instale bibliotecas adicionais, caso necessário, com pip install biblioteca.
-
-Execução do Código
-Salve o código: Salve o seguinte script como idnobarbante.py:
+Python: Botão Interativo com Tkinter
+Aqui está o código completo para criar um botão interativo com Tkinter que abre um link ao clicar e pode ser movido pela tela:
 
 python
 import tkinter as tk
@@ -135,28 +107,35 @@ button.bind('<ButtonRelease-2>', stop_move)  # Soltar o botão do meio
 
 # Loop principal da aplicação
 root.mainloop()
-Abra o Prompt de Comando (CMD):
+Como Executar
+Instale o Python:
+
+Baixe e instale a versão mais recente do Python. Recomendamos a versão 3.10 ou superior.
+
+Salve o código:
+
+Copie o código acima e salve em um arquivo chamado idnobarbante.py.
+
+Abra o terminal:
 
 No Windows, pressione Win + R, digite cmd e pressione Enter.
 
-Navegue até a pasta do projeto:
-
-Use o comando cd para acessar a pasta onde está salvo idnobarbante.py.
+Navegue até a pasta onde o arquivo idnobarbante.py está salvo usando o comando cd.
 
 Execute o script:
 
-No CMD, rode o comando: python idnobarbante.py.
+Execute o comando: python idnobarbante.py.
 
 Funcionalidades
-O botão abre o link para o site definido ao clicar.
+Abrir Link: Clique esquerdo no botão para abrir o link no navegador padrão.
 
-Movimente o botão clicando e arrastando com a roda do mouse:
+Movimentação: Use o botão do meio do mouse para mover o botão pela tela:
 
-Pressione a roda do mouse sobre o botão para começar a mover.
+Pressione o botão do meio para iniciar o movimento.
 
-Arraste o botão enquanto mantém a roda pressionada.
+Arraste enquanto mantém o botão pressionado.
 
-Solte a roda do mouse para parar o movimento.
+Solte para parar o movimento.
 
 Licença
 Este projeto está sob a MIT License.
