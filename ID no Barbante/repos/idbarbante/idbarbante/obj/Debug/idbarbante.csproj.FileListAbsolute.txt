@@ -1,0 +1,9 @@
+C:\Users\carli\source\repos\idbarbante\idbarbante\bin\Debug\idbarbante.exe.config
+C:\Users\carli\source\repos\idbarbante\idbarbante\bin\Debug\idbarbante.exe
+C:\Users\carli\source\repos\idbarbante\idbarbante\bin\Debug\idbarbante.pdb
+C:\Users\carli\source\repos\idbarbante\idbarbante\obj\Debug\idbarbante.csproj.AssemblyReference.cache
+C:\Users\carli\source\repos\idbarbante\idbarbante\obj\Debug\idbarbante.Properties.Resources.resources
+C:\Users\carli\source\repos\idbarbante\idbarbante\obj\Debug\idbarbante.csproj.GenerateResource.cache
+C:\Users\carli\source\repos\idbarbante\idbarbante\obj\Debug\idbarbante.csproj.CoreCompileInputs.cache
+C:\Users\carli\source\repos\idbarbante\idbarbante\obj\Debug\idbarbante.exe
+C:\Users\carli\source\repos\idbarbante\idbarbante\obj\Debug\idbarbante.pdb
