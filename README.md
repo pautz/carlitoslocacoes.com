@@ -1,87 +1,88 @@
-# Carlito's Locações
+Carlito's Locações
+Nova Funcionalidade: ID no Barbante para Localização de Bebês
+Bem-vindo ao repositório oficial do Carlito's Locações! Estamos entusiasmados em apresentar nossa nova funcionalidade: ID no Barbante, uma solução inovadora para aumentar a segurança e localizar bebês em ambientes movimentados.
 
-## Nova Funcionalidade: ID no Barbante para Localização de Bebês
+O que é o ID no Barbante?
+O ID no Barbante é um recurso seguro e discreto que permite rastrear a localização de bebês, sendo facilmente acoplado à chupeta ou roupa do bebê.
 
-Estamos entusiasmados em anunciar uma nova e inovadora funcionalidade em nosso site Carlito's Locações. A partir de agora, você pode usufruir da tecnologia de **ID no Barbante** para aumentar a segurança e localização de bebês!
+Benefícios
+Segurança: Tranquilidade em locais públicos ou eventos movimentados.
 
-### O que é o ID no Barbante?
+Praticidade: Fácil de usar e configurar.
 
-O ID no Barbante é um recurso que permite rastrear a localização de bebês através de um identificador seguro e discreto, preso à chupeta ou à roupa do bebê.
+Discrição: Um identificador pequeno e leve que não incomoda o bebê.
 
-### Benefícios
+Código Interativo com Tkinter
+Aqui está o código Python completo para criar um botão interativo que pode abrir um link e ser movimentado pela tela:
 
-- Maior segurança em locais movimentados
-- Tranquilidade para os pais
-- Fácil de usar e discreto
+python
+import tkinter as tk
+import webbrowser
 
-### Código ID Barbante Botão Estilizado em seu projeto.
+# Função executada ao clicar no botão (abrir link)
+def button_action():
+    url = "https://carlitoslocacoes.com/site6/site2"  # Link associado ao botão
+    webbrowser.open(url)  # Abre o link no navegador padrão
 
-Para implementar o botão estilizado no HTML, use este estilo e botão:
+# Função para iniciar o movimento do botão
+def start_move(event):
+    global moving
+    moving = True
+    global offset_x, offset_y
+    offset_x = event.x
+    offset_y = event.y
 
-`<style>.stylized-button { font-size: 16px; color: #fff; background-color: #008CBA; border: none; padding: 10px 20px; text-align: center; cursor: pointer; border-radius: 5px; transition: background-color 0.3s; } .stylized-button:hover { background-color: #005f73; } .responsive-container { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: center; } .stylized-button { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); z-index: 1000; }</style>`
+# Função para mover o botão
+def move_button(event):
+    if moving:
+        new_x = event.x_root - offset_x
+        new_y = event.y_root - offset_y
+        button.place(x=new_x, y=new_y)
 
-`<div class="responsive-container"> <a href="https://carlitoslocacoes.com/site6/site2/" target="_blank" class="stylized-button">ID no Barbante</a> </div>`
+# Função para parar o movimento do botão
+def stop_move(event):
+    global moving
+    moving = False
 
----
+# Configuração da janela principal
+root = tk.Tk()
+root.title("Overlay")
+root.geometry(f"{root.winfo_screenwidth()}x{root.winfo_screenheight()}")  # Janela ocupa tela inteira
+root.attributes('-topmost', True)  # Janela sempre no topo
+root.overrideredirect(True)  # Remove barra da janela
+root.configure(bg='white')  # Cor de fundo transparente
+root.attributes('-transparentcolor', 'white')  # Define "white" como transparente
 
-# ID no Barbante
+# Estado do movimento
+moving = False
 
-Um aplicativo Python que permite criar um botão interativo, móvel e funcional utilizando **Tkinter**.
+# Criação do botão com fundo visível e texto legível
+button = tk.Label(root, text="ID no Barbante", font=("Arial", 12), fg="blue", bg="lightgray", bd=1, relief="solid")
+button.place(x=100, y=100)  # Posição inicial do botão
 
-## Instalação do Python
+# Vincular o clique esquerdo ao botão para abrir o link
+button.bind('<Button-1>', lambda event: button_action())
 
-Para rodar este projeto, siga os passos abaixo para instalar o Python pela Microsoft Store:
+# Bind dos eventos do mouse para movimentação
+button.bind('<Button-2>', start_move)    # Clique com o botão do meio do mouse sobre o botão
+button.bind('<B2-Motion>', move_button)  # Movimento enquanto o botão do meio é pressionado
+button.bind('<ButtonRelease-2>', stop_move)  # Soltar o botão do meio
 
-1. **Acesse a Microsoft Store**:
-   - Procure pela Microsoft Store no menu Iniciar do Windows e abra o aplicativo.
+# Loop principal da aplicação
+root.mainloop()
+Funcionalidades do Código
+Abrir Link: Clique esquerdo no botão para abrir o link no navegador.
 
-2. **Busque por Python**:
-   - Use a barra de busca e digite "Python".
+Movimentação do Botão: Clique e segure o botão do meio do mouse para mover o botão pela tela.
 
-3. **Escolha uma versão**:
-   - Instale a versão mais recente do Python (recomendado: Python 3.10 ou superior).
+Como Executar
+Instale o Python (recomendado: versão 3.10 ou superior).
 
-4. **Instale o Python**:
-   - Clique em "Obter" ou "Instalar" para iniciar o processo.
+Salve o código em um arquivo chamado idnobarbante.py.
 
-5. **Configuração após a instalação**:
-   - Confirme a instalação no Prompt de Comando (CMD) usando `python --version`.
-   - Instale bibliotecas adicionais, caso necessário, com `pip install biblioteca`.
+Abra o terminal e navegue até o diretório onde o arquivo está localizado.
 
-## Execução do Código
+Execute o script com o comando: python idnobarbante.py.
 
-1. **Salve o código**:
-   - Salve o seguinte script como `idnobarbante.py`:
-
-`import tkinter as tk`
-`import webbrowser`
-`def button_action(): url = "https://carlitoslocacoes.com/site6/site2" webbrowser.open(url)`
-`def start_move(event): global moving moving = True global offset_x, offset_y offset_x = event.x offset_y = event.y`
-`def move_button(event): if moving: new_x = event.x_root - offset_x new_y = event.y_root - offset_y button.place(x=new_x, y=new_y)`
-`def stop_move(event): global moving moving = False`
-`root = tk.Tk() root.title("Overlay") root.geometry(f"{root.winfo_screenwidth()}x{root.winfo_screenheight()}") root.attributes('-topmost', True) root.overrideredirect(True) root.configure(bg='white') root.attributes('-transparentcolor', 'white')`
-`moving = False`
-`button = tk.Label(root, text="ID no Barbante", font=("Arial", 12), fg="blue", bg="lightgray", bd=1, relief="solid") button.place(x=100, y=100)`
-`button.bind('<Button-2>', start_move) button.bind('<B2-Motion>', move_button) button.bind('<ButtonRelease-2>', stop_move)`
-`root.mainloop()`
-
-2. **Abra o Prompt de Comando (CMD)**:
-   - No Windows, pressione `Win + R`, digite `cmd` e pressione Enter.
-
-3. **Navegue até a pasta do projeto**:
-   - Use o comando `cd` para acessar a pasta onde está salvo `idnobarbante.py`.
-
-4. **Execute o script**:
-   - No CMD, rode o comando: `python idnobarbante.py`.
-
-## Funcionalidades
-
-- O botão abre o link para o site definido ao clicar.
-- Movimente o botão clicando e arrastando com a **roda do mouse**:
-  - **Pressione a roda do mouse** sobre o botão para começar a mover.
-  - **Arraste o botão** enquanto mantém a roda pressionada.
-  - **Solte a roda do mouse** para parar o movimento.
-
-## Licença
-
-Este projeto está sob a [MIT License](https://opensource.org/licenses/MIT).
+Licença
+Este projeto está licenciado sob a MIT License.
