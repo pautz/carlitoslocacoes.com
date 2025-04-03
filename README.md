@@ -1,6 +1,7 @@
 # Carlito's Locações
 <p>Estamos entusiasmados em anunciar uma nova e inovadora funcionalidade em nosso site Carlito's Locações. A partir de agora, você pode usufruir da tecnologia de "ID no Barbante" para aumentar a segurança e localização de bebês!</p>
 https://carlitoslocacoes.com/site6/site2
+
 ## Nova Funcionalidade: ID no Barbante para Localização de Bebês
 
 Este repositório apresenta o **ID no Barbante**, uma solução que utiliza um botão interativo para facilitar a localização de bebês, trazendo maior segurança e tranquilidade para os pais.
